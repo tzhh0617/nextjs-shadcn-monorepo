@@ -6,6 +6,7 @@
     "declarationMap": true,
     "outDir": "./dist"
   },
-  "include": ["src/**/*"],
+  "references": [{ "path": "../types" }, { "path": "../utils" }],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
