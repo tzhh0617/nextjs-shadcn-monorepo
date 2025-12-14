@@ -1,21 +1,22 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge, BadgeCheck, Zap, Shield } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge, BadgeCheck, Zap, Shield } from 'lucide-react'
 
 const features = [
   {
     icon: BadgeCheck,
-    title: "TypeScript First",
-    description: "Full TypeScript support with strict type checking for better development experience.",
+    title: 'TypeScript First',
+    description:
+      'Full TypeScript support with strict type checking for better development experience.',
   },
   {
     icon: Zap,
-    title: "Lightning Fast",
-    description: "Built with Next.js 15 for optimal performance and SEO.",
+    title: 'Lightning Fast',
+    description: 'Built with Next.js 15 for optimal performance and SEO.',
   },
   {
     icon: Shield,
-    title: "Secure by Default",
-    description: "Follows latest security best practices and patterns.",
+    title: 'Secure by Default',
+    description: 'Follows latest security best practices and patterns.',
   },
 ]
 
@@ -37,7 +38,7 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <Card key={index}>
               <CardHeader>
-                <feature.icon className="h-10 w-10 text-primary" />
+                <feature.icon className="text-primary h-10 w-10" />
                 <CardTitle>{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -49,4 +50,4 @@ export function FeaturesSection() {
       </div>
     </section>
   )
-}
+} // test comment

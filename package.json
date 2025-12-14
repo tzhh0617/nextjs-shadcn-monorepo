@@ -40,12 +40,24 @@
     "typescript": "^5.9.3"
   },
   "lint-staged": {
-    "apps/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
+    "apps/client/**/*.{js,jsx,ts,tsx}": [
+      "cd apps/client && eslint --fix",
       "prettier --write"
     ],
-    "packages/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
+    "apps/admin/**/*.{js,jsx,ts,tsx}": [
+      "cd apps/admin && eslint --fix",
+      "prettier --write"
+    ],
+    "packages/ui/**/*.{js,jsx,ts,tsx}": [
+      "cd packages/ui && eslint --fix",
+      "prettier --write"
+    ],
+    "packages/utils/**/*.{js,jsx,ts,tsx}": [
+      "cd packages/utils && eslint --fix",
+      "prettier --write"
+    ],
+    "packages/types/**/*.{js,jsx,ts,tsx}": [
+      "cd packages/types && eslint --fix",
       "prettier --write"
     ],
     "*.{json,css,md}": [
