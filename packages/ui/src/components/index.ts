@@ -232,5 +232,12 @@ export { Textarea } from './textarea'
 export { Toggle, ToggleGroup, ToggleGroupItem } from './toggle'
 export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './tooltip'
 
+// Sidebar example components
+export { AppSidebar } from './app-sidebar'
+export { NavMain } from './nav-main'
+export { NavProjects } from './nav-projects'
+export { NavUser } from './nav-user'
+export { TeamSwitcher } from './team-switcher'
+
 // Export hooks
 export { useMobile } from '../hooks/use-mobile'
