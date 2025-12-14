@@ -99,6 +99,9 @@ importers:
 
   apps/client:
     dependencies:
+      '@workspace/config':
+        specifier: workspace:*
+        version: link:../../packages/config
       '@workspace/types':
         specifier: workspace:*
         version: link:../../packages/types
@@ -130,6 +133,18 @@ importers:
       '@types/react-dom':
         specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.7)
+      autoprefixer:
+        specifier: ^10.4.22
+        version: 10.4.22(postcss@8.5.6)
+      postcss:
+        specifier: ^8.5.6
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.1.18
+        version: 4.1.18
+      tailwindcss-animate:
+        specifier: ^1.0.7
+        version: 1.0.7(tailwindcss@4.1.18)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
