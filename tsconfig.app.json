@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "incremental": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@workspace/ui": ["./packages/ui/src"],
+      "@workspace/ui/*": ["./packages/ui/src/*"],
+      "@workspace/utils": ["./packages/utils/src"],
+      "@workspace/utils/*": ["./packages/utils/src/*"],
+      "@workspace/types": ["./packages/types/src"],
+      "@workspace/types/*": ["./packages/types/src/*"],
+      "@workspace/config": ["./packages/config"],
+      "@workspace/config/*": ["./packages/config/*"]
+    }
+  },
+  "include": ["apps/*/src/**/*.{js,ts,jsx,tsx,mdx}", "packages/*/src/**/*.{js,ts,jsx,tsx,mdx}"],
+  "exclude": ["node_modules", "dist", ".next", "out"]
+}

@@ -1,11 +1,6 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../tsconfig.app.json",
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "es6"],
-    "jsx": "preserve",
-    "noEmit": true,
-    "incremental": true,
-    "plugins": [{ "name": "next" }],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
@@ -14,11 +9,6 @@
       "@/app/*": ["./src/app/*"]
     }
   },
-  "references": [
-    { "path": "../../packages/ui" },
-    { "path": "../../packages/utils" },
-    { "path": "../../packages/types" }
-  ],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
