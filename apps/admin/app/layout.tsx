@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
-import { Toaster } from '@workspace/ui'
+// import { Toaster } from '@workspace/ui'
 import '@workspace/ui/globals.css'
 
 const geistSans = Geist({
@@ -59,7 +59,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-background min-h-screen font-sans antialiased`}
       >
         {children}
-        <Toaster />
+        {/* <Toaster /> */}
       </body>
     </html>
   )

@@ -4,15 +4,15 @@
   "rsc": true,
   "tsx": true,
   "tailwind": {
-    "config": "packages/config/tailwind.config.ts",
-    "css": "packages/ui/src/styles/globals.css",
+    "config": "",
+    "css": "./src/styles/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
     "prefix": ""
   },
   "aliases": {
-    "components": "@workspace/ui",
-    "ui": "@workspace/ui/ui",
+    "components": "@workspace/ui/components",
+    "ui": "@workspace/ui/components",
     "lib": "@workspace/ui/lib",
     "utils": "@workspace/ui/lib/utils",
     "hooks": "@workspace/ui/hooks"
