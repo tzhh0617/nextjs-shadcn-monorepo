@@ -18,7 +18,7 @@ export default {
         'revert', // 回滚
       ],
     ],
-    'subject-max-length': [2, 'always', 50],
-    'body-max-line-length': [2, 'always', 72],
+    'subject-max-length': [2, 'always', 100],
+    'body-max-line-length': [2, 'always', 500],
   },
 }
