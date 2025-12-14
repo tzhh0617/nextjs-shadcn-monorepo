@@ -24,8 +24,7 @@
     "precommit": "lint-staged",
     "clean": "pnpm run --recursive clean && rm -rf node_modules",
     "clean:all": "pnpm run clean && rm -rf .next node_modules",
-    "test": "pnpm run --parallel test",
-    "postinstall": "pnpm run --recursive build"
+    "test": "pnpm run --parallel test"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
