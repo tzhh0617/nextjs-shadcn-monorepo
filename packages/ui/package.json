@@ -8,8 +8,9 @@
     "src/**/*"
   ],
   "scripts": {
-    "build": "tsc --noEmit",
-    "dev": "tsc --watch --noEmit",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit",
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
