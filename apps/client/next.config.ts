@@ -1,10 +1,15 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  transpilePackages: ['@workspace/ui', '@workspace/utils', '@workspace/types'],
+  transpilePackages: [
+    '@workspace/components',
+    '@workspace/hooks',
+    '@workspace/utils',
+    '@workspace/types',
+  ],
   experimental: {
-    optimizePackageImports: ['@workspace/ui'],
+    optimizePackageImports: ['@workspace/components'],
   },
 }
 
-export default nextConfig // test change
+export default nextConfig
