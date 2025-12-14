@@ -1,67 +1,5 @@
-// Core UI Components
-export { Button } from './button'
-export { Input } from './input'
-export { Label } from './label'
-export { Textarea } from './textarea'
-
-// Layout Components
-export { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './card'
-export {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from './sheet'
-export { Separator } from './separator'
-export { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs'
-
-// Navigation Components
-export {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from './breadcrumb'
-export {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from './navigation-menu'
-import * as Menubar from './menubar'
-export { Menubar }
-
-// Form Components
-export { Checkbox } from './checkbox'
-export { RadioGroup, RadioGroupItem } from './radio-group'
-export { Switch } from './switch'
-export { Slider } from './slider'
-export {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from './form'
-
-// Display Components
-export { Badge } from './badge'
-export { Avatar, AvatarFallback, AvatarImage } from './avatar'
-export { Progress } from './progress'
-export { Skeleton } from './skeleton'
-
-// Feedback Components
+// Re-export all components for easier imports
+export { Accordion } from './accordion'
 export { Alert, AlertDescription, AlertTitle } from './alert'
 export {
   AlertDialog,
@@ -74,9 +12,53 @@ export {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from './alert-dialog'
-export { Toaster } from './sonner'
-
-// Overlay Components
+export { AspectRatio } from './aspect-ratio'
+export { Avatar, AvatarFallback, AvatarImage } from './avatar'
+export { Badge } from './badge'
+export {
+  Breadcrumb,
+  BreadcrumbEllipsis,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from './breadcrumb'
+export { Button } from './button'
+export { ButtonGroup, ButtonGroupItem } from './button-group'
+export { Calendar } from './calendar'
+export { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './card'
+export { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './carousel'
+export { ChartContainer, ChartTooltip, ChartTooltipContent } from './chart'
+export { Checkbox } from './checkbox'
+export { Collapsible, CollapsibleContent, CollapsibleTrigger } from './collapsible'
+export {
+  Command,
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from './command'
+export {
+  ContextMenu,
+  ContextMenuCheckboxItem,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuLabel,
+  ContextMenuPortal,
+  ContextMenuRadioGroup,
+  ContextMenuRadioItem,
+  ContextMenuSeparator,
+  ContextMenuShortcut,
+  ContextMenuSub,
+  ContextMenuSubContent,
+  ContextMenuSubTrigger,
+  ContextMenuTrigger,
+} from './context-menu'
 export {
   Dialog,
   DialogContent,
@@ -86,9 +68,6 @@ export {
   DialogTitle,
   DialogTrigger,
 } from './dialog'
-export { Popover, PopoverContent, PopoverTrigger } from './popover'
-export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './tooltip'
-export { HoverCard, HoverCardContent, HoverCardTrigger } from './hover-card'
 export {
   Drawer,
   DrawerClose,
@@ -99,18 +78,77 @@ export {
   DrawerTitle,
   DrawerTrigger,
 } from './drawer'
-
-// List Components
-export { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './accordion'
-export { Collapsible, CollapsibleContent, CollapsibleTrigger } from './collapsible'
-
-// Data Display
-export { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, TableRow } from './table'
-export { Calendar } from './calendar'
-export { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './carousel'
-
-// Utility Components
-export { AspectRatio } from './aspect-ratio'
+export {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from './dropdown-menu'
+export { Empty } from './empty'
+export { Fieldset, Legend } from './field'
+export {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from './form'
+export { HoverCard, HoverCardContent, HoverCardTrigger } from './hover-card'
+export { Input } from './input'
+export { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from './input-otp'
+export { InputGroup, InputGroupButton } from './input-group'
+export { Item } from './item'
+export { Kbd } from './kbd'
+export { Label } from './label'
+export {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarTrigger,
+} from './menubar'
+export {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from './navigation-menu'
+export {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from './pagination'
+export { Popover, PopoverContent, PopoverTrigger } from './popover'
+export { Progress } from './progress'
+export { RadioGroup, RadioGroupItem } from './radio-group'
+export { ResizableHandle, ResizablePanel, ResizablePanelGroup } from './resizable'
 export { ScrollArea } from './scroll-area'
 export {
   Select,
@@ -124,56 +162,75 @@ export {
   SelectTrigger,
   SelectValue,
 } from './select'
-
-// Input Components
-export { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from './input-otp'
-
-// Context Components
+export { Separator } from './separator'
 export {
-  ContextMenu,
-  ContextMenuCheckboxItem,
-  ContextMenuContent,
-  ContextMenuItem,
-  ContextMenuLabel,
-  ContextMenuRadioGroup,
-  ContextMenuRadioItem,
-  ContextMenuSeparator,
-  ContextMenuShortcut,
-  ContextMenuSub,
-  ContextMenuSubContent,
-  ContextMenuSubTrigger,
-  ContextMenuTrigger,
-} from './context-menu'
-
-// Toggle Components
-export { Toggle } from './toggle'
-export { ToggleGroup, ToggleGroupItem } from './toggle-group'
-export { ButtonGroup } from './button-group'
-
-// Resizable Components
-import * as ResizablePrimitive from './resizable'
-export { ResizablePrimitive }
-
-// Advanced Components
-export { Command } from './command'
-export { ChartContainer, ChartTooltip, ChartTooltipContent } from './chart'
-export { Empty } from './empty'
-export { Kbd } from './kbd'
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from './sheet'
 export {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from './pagination'
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupAction,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarHeader,
+  SidebarInset,
+  SidebarMenu,
+  SidebarMenuAction,
+  SidebarMenuBadge,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarMenuSkeleton,
+  SidebarMenuSub,
+  SidebarMenuSubButton,
+  SidebarMenuSubItem,
+  Menu,
+  MenuCheckboxItem,
+  MenuContent,
+  MenuGroup,
+  MenuItem,
+  MenuLabel,
+  MenuPortal,
+  MenuRadioGroup,
+  MenuRadioItem,
+  MenuSeparator,
+  MenuShortcut,
+  MenuSub,
+  MenuSubContent,
+  MenuSubTrigger,
+  MenuTrigger,
+  SidebarProvider,
+  SidebarRail,
+  SidebarSeparator,
+  SidebarTrigger,
+  useSidebar,
+} from './sidebar'
+export { Skeleton } from './skeleton'
+export { Slider } from './slider'
 export { Spinner } from './spinner'
-export { Field } from './field'
-export { Item } from './item'
-export { InputGroup } from './input-group'
-import * as Sidebar from './sidebar'
-export { Sidebar }
+export { Toaster } from './sonner'
+export { Switch } from './switch'
+export {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from './table'
+export { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs'
+export { Textarea } from './textarea'
+export { Toggle, ToggleGroup, ToggleGroupItem } from './toggle'
+export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './tooltip'
 
-// Re-export utilities
-export { cn } from '../lib/utils'
+// Export hooks
+export { useMobile } from '../hooks/use-mobile'
