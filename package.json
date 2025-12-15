@@ -5,10 +5,19 @@
   "scripts": {
     "dev": "turbo run dev",
     "dev:admin": "turbo run dev --filter=@workspace/admin",
+    "dev:client": "turbo run dev --filter=@workspace/client",
+    "dev:service": "turbo run dev --filter=@workspace/service",
+    "dev:talent": "turbo run dev --filter=@workspace/talent",
     "build": "turbo run build",
     "build:admin": "turbo run build --filter=@workspace/admin",
+    "build:client": "turbo run build --filter=@workspace/client",
+    "build:service": "turbo run build --filter=@workspace/service",
+    "build:talent": "turbo run build --filter=@workspace/talent",
     "start": "turbo run start",
     "start:admin": "turbo run start --filter=@workspace/admin",
+    "start:client": "turbo run start --filter=@workspace/client",
+    "start:service": "turbo run start --filter=@workspace/service",
+    "start:talent": "turbo run start --filter=@workspace/talent",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "type-check": "turbo run type-check",
@@ -36,6 +45,18 @@
   "lint-staged": {
     "apps/admin/**/*.{js,jsx,ts,tsx}": [
       "cd apps/admin && eslint --fix",
+      "prettier --write"
+    ],
+    "apps/client/**/*.{js,jsx,ts,tsx}": [
+      "cd apps/client && eslint --fix",
+      "prettier --write"
+    ],
+    "apps/service/**/*.{js,jsx,ts,tsx}": [
+      "cd apps/service && eslint --fix",
+      "prettier --write"
+    ],
+    "apps/talent/**/*.{js,jsx,ts,tsx}": [
+      "cd apps/talent && eslint --fix",
       "prettier --write"
     ],
     "packages/ui/**/*.{js,jsx,ts,tsx}": [
