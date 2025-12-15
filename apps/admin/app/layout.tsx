@@ -1,51 +1,26 @@
-import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
-// import { Toaster } from '@workspace/ui'
-import '@workspace/ui/globals.css'
+import type { Metadata } from 'next'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+import '@workspace/ui/globals.css'
+import { Providers } from '@/components/providers'
+import { AppSidebar } from '@/components/sidebar/app-sidebar'
+import { DynamicBreadcrumb } from '@workspace/ui/components/breadcrumb/dynamic-breadcrumb'
+import { Separator } from '@workspace/ui/components/separator'
+import { SidebarInset, SidebarProvider, SidebarTrigger } from '@workspace/ui/components/sidebar'
+
+const fontSans = Geist({
   subsets: ['latin'],
+  variable: '--font-sans',
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const fontMono = Geist_Mono({
   subsets: ['latin'],
+  variable: '--font-mono',
 })
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Admin Dashboard',
-    template: '%s | Admin Dashboard',
-  },
-  description: 'Admin dashboard for managing the application',
-  keywords: ['Next.js', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'React', 'Admin'],
-  authors: [{ name: 'Your Name' }],
-  creator: 'Your Name',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://admin.your-domain.com',
-    title: 'Admin Dashboard',
-    description: 'Admin dashboard for managing the application',
-    siteName: 'Admin Dashboard',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Admin Dashboard',
-    description: 'Admin dashboard for managing the application',
-  },
-  robots: {
-    index: false,
-    follow: false,
-  },
-}
-
-export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  title: 'Admin Dashboard',
+  description: 'Admin dashboard for NextJS Demo',
 }
 
 export default function RootLayout({
@@ -55,11 +30,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-background min-h-screen font-sans antialiased`}
-      >
-        {children}
-        {/* <Toaster /> */}
+      <body className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}>
+        <Providers>
+          <SidebarProvider>
+            <AppSidebar />
+            <SidebarInset>
+              <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
+                <div className="flex items-center gap-2 px-4">
+                  <SidebarTrigger className="-ml-1" />
+                  <Separator
+                    orientation="vertical"
+                    className="mr-2 data-[orientation=vertical]:h-4"
+                  />
+                  <DynamicBreadcrumb rootTitle="Admin Console" />
+                </div>
+              </header>
+              <div className="flex flex-1 flex-col gap-4 p-4 pt-0">{children}</div>
+            </SidebarInset>
+          </SidebarProvider>
+        </Providers>
       </body>
     </html>
   )
