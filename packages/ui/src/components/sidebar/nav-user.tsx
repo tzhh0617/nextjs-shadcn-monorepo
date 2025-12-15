@@ -2,7 +2,7 @@
 
 import { BadgeCheck, Bell, ChevronsUpDown, CreditCard, LogOut, Sparkles } from 'lucide-react'
 
-import { Avatar, AvatarFallback, AvatarImage } from '@workspace/ui/components/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,13 +11,13 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@workspace/ui/components/dropdown-menu'
+} from '@workspace/ui/components/ui/dropdown-menu'
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from '@workspace/ui/components/sidebar'
+} from '@workspace/ui/components/ui/sidebar'
 
 export function NavUser({
   user,

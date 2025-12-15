@@ -5,8 +5,8 @@ import '@workspace/ui/globals.css'
 import { Providers } from '@/components/providers'
 import { AppSidebar } from '@/components/sidebar/app-sidebar'
 import { DynamicBreadcrumb } from '@workspace/ui/components/breadcrumb/dynamic-breadcrumb'
-import { Separator } from '@workspace/ui/components/separator'
-import { SidebarInset, SidebarProvider, SidebarTrigger } from '@workspace/ui/components/sidebar'
+import { Separator } from '@workspace/ui/components/ui/separator'
+import { SidebarInset, SidebarProvider, SidebarTrigger } from '@workspace/ui/components/ui/sidebar'
 
 const fontSans = Geist({
   subsets: ['latin'],

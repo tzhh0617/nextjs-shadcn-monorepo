@@ -11,7 +11,7 @@ import {
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from '@workspace/ui/components/sidebar'
+} from '@workspace/ui/components/ui/sidebar'
 
 export interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
   data: {

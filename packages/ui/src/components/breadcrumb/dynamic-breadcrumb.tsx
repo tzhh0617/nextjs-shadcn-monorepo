@@ -9,7 +9,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@workspace/ui/components/breadcrumb'
+} from '@workspace/ui/components/ui/breadcrumb'
 
 interface DynamicBreadcrumbProps {
   rootTitle?: string
