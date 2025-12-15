@@ -25,7 +25,7 @@ export {
   BreadcrumbSeparator,
 } from './breadcrumb'
 export { Button } from './button'
-export { ButtonGroup, ButtonGroupItem } from './button-group'
+export { ButtonGroup, ButtonGroupSeparator, ButtonGroupText } from './button-group'
 export { Calendar } from './calendar'
 export { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './card'
 export { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './carousel'
@@ -95,7 +95,18 @@ export {
   DropdownMenuTrigger,
 } from './dropdown-menu'
 export { Empty } from './empty'
-export { Fieldset, Legend } from './field'
+export {
+  Field,
+  FieldLabel,
+  FieldDescription,
+  FieldError,
+  FieldGroup,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
+  FieldContent,
+  FieldTitle,
+} from './field'
 export {
   Form,
   FormControl,
@@ -191,21 +202,6 @@ export {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
-  Menu,
-  MenuCheckboxItem,
-  MenuContent,
-  MenuGroup,
-  MenuItem,
-  MenuLabel,
-  MenuPortal,
-  MenuRadioGroup,
-  MenuRadioItem,
-  MenuSeparator,
-  MenuShortcut,
-  MenuSub,
-  MenuSubContent,
-  MenuSubTrigger,
-  MenuTrigger,
   SidebarProvider,
   SidebarRail,
   SidebarSeparator,
@@ -229,7 +225,8 @@ export {
 } from './table'
 export { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs'
 export { Textarea } from './textarea'
-export { Toggle, ToggleGroup, ToggleGroupItem } from './toggle'
+export { Toggle, toggleVariants } from './toggle'
+export { ToggleGroup, ToggleGroupItem } from './toggle-group'
 export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './tooltip'
 
 // Sidebar example components
@@ -240,4 +237,4 @@ export { NavUser } from './nav-user'
 export { TeamSwitcher } from './team-switcher'
 
 // Export hooks
-export { useMobile } from '../hooks/use-mobile'
+export { useIsMobile } from '../hooks/use-mobile'
